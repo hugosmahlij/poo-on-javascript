@@ -106,6 +106,7 @@ const antonio = {
   ],
 }; */
 
+/* 
 class LearningPath {
   constructor({ name, courses = [] }) {
     (this.name = name), (this.courses = courses);
@@ -163,4 +164,36 @@ const fabi = new Student({
   email: "fabi@flamer.com",
   facebook: "Fabián Yrala",
   learningPaths: [escuelaVideojuegos],
-});
+}); */
+
+function videoPlay(id) {
+  const urlSecreta = "https://platziultrasecretomasquelanasa.com";
+  console.log("Se está repoduciendo desde la url " + urlSecreta);
+}
+
+function videoStop(id) {
+  const urlSecreta = "https://platziultrasecretomasquelanasa.com";
+  console.log("Se ha pausado la url " + urlSecreta);
+}
+
+class PlatziClass {
+  constructor({ name, videoID }) {
+    this.name = name;
+    this.videoID = videoID;
+  }
+
+  repoducir() {
+    videoPlay(this.videoID);
+  }
+
+  pausar() {
+    videoStop(this.videoID);
+  }
+}
+
+class Course {
+  constructor({ name, classes = [] }) {
+    this.name = name;
+    this.classes = classes;
+  }
+}
